@@ -36,7 +36,7 @@ int main() {
     int *sumArray = (int *)malloc(userInput * sizeof(int));
 
     // Calculate the sum of elements at corresponding indices
-#pragma omp parallel for
+#pragma omp parallel
     for (int i = 0; i < userInput; ++i) {
         sumArray[i] = array1[i] + array2[i];
     }
